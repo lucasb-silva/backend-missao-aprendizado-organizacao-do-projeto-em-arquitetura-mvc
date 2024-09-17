@@ -3,7 +3,7 @@ const express = require('express')
 const { MongoClient, ObjectId } = require('mongodb')
 
 const dbUrl = process.env.DATABASE_URL
-const dbName = 'mongodb-intro-e-implementacao'
+const dbName = 'mongodb-arquitetura-mvc'
 
 // Declaramos a funcão main()
 async function main() {
