@@ -1,9 +1,8 @@
 require('dotenv').config()
 const express = require('express')
 const { connectToDatabase } = require('./db/database-connection')
+const personagemRouter = require('./personagem/personagem.router')
 // const { MongoClient, ObjectId } = require('mongodb')
-
-
 
 // Declaramos a funcão main()
 async function main() {
@@ -21,6 +20,8 @@ async function main() {
   app.get('/', function (req, res) {
     res.send('Hello World!')
   })
+
+  app.use('/personagem', personagemRouter)
 
   // FIX: mover isso para a pasta `personagem`
   /*
