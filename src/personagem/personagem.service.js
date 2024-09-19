@@ -39,7 +39,14 @@ function updateById(id, newItem) {
 
 }
 
-function deleteById() {
+/**
+ * 
+ * @param {string} id 
+ * @returns 
+ */
+function deleteById(id) {
+  // Remover o item da collection usando o ID
+  return getCollection().deleteOne({ _id: new ObjectId(id) })
 }
 
 module.exports = {
