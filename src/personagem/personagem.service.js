@@ -5,6 +5,7 @@ function getCollection() {
 }
 
 function readAll() {
+  // Acessamos a lista de personagens no collection do MongoDB
   return getCollection().find().toArray()
 }
 

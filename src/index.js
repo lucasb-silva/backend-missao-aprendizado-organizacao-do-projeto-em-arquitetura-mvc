@@ -25,15 +25,6 @@ async function main() {
 
   // FIX: mover isso para a pasta `personagem`
   /*
-  // Endpoint Read All (GET) /personagem
-  app.get('/personagem', async function (req, res) {
-    // Acessamos a lista de itens no collection do MongoDB
-    const itens = await collection.find().toArray()
-
-    // Enviamos a lista de itens como resultado
-    res.send(itens)
-  })
-
   // Endpoint Read by ID (GET) /personagem/:id
   app.get('/personagem/:id', async function (req, res) {
     // Acessamos o parâmetro de rota ID
